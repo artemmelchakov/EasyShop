@@ -1,7 +1,7 @@
 ﻿using FluentNHibernate.Mapping;
 using System;
 
-namespace EasyShop.DataAccessLayer.Models.Products
+namespace EasyShop.DataAccessLayer.Models
 {
     public abstract class BaseProduct
     {

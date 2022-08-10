@@ -1,13 +1,14 @@
-﻿using System;
+﻿using EasyShop.DataAccessLayer.Models;
+using EasyShop.DataAccessLayer.Models.NHibernate;
+using EasyShop.DataAccessLayer.Repositories;
+using EasyShop.Models;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using NHibernate;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using EasyShop.Models;
-using EasyShop.DataAccessLayer.Models.Products;
-using EasyShop.DataAccessLayer.Repositories;
 
 namespace EasyShop.Controllers
 {
@@ -42,7 +43,12 @@ namespace EasyShop.Controllers
 
         public IActionResult Index()
         {
-            return View(new Picture());
+            Picture pictures;
+            using(ISession session = NHibernateHelper.OpenSession())
+            {
+                pictures = session.Get<Picture>(new Guid("bd360021-edb5-4c9b-a7e8-924051f9a3b0"));
+                return View(pictures);
+            }
         }
 
         public IActionResult Privacy()

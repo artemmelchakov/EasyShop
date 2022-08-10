@@ -1,7 +1,6 @@
-﻿using EasyShop.DataAccessLayer.Models.Products.Interfaces;
-using FluentNHibernate.Mapping;
+﻿using FluentNHibernate.Mapping;
 
-namespace EasyShop.DataAccessLayer.Models.Products
+namespace EasyShop.DataAccessLayer.Models
 {
     public class Picture : BaseProduct, IFlatProduct
     {
@@ -16,11 +15,6 @@ namespace EasyShop.DataAccessLayer.Models.Products
     {
         public PictureMap() : base()
         {
-            /*Id(picture => picture.Id).GeneratedBy.Guid();
-            Map(picture => picture.Name);
-            Map(picture => picture.Price);
-            Map(picture => picture.Description);*/
-
             Map(picture => picture.HeightCm);
             Map(picture => picture.WidthCm);
             Map(picture => picture.PaintingName);

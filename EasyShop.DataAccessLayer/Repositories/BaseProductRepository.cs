@@ -1,5 +1,5 @@
-﻿using EasyShop.DataAccessLayer.NHibernate;
-using EasyShop.DataAccessLayer.Models.Products;
+﻿using EasyShop.DataAccessLayer.Models;
+using EasyShop.DataAccessLayer.NHibernate;
 using NHibernate;
 using System;
 using System.Collections.Generic;
@@ -9,7 +9,7 @@ namespace EasyShop.DataAccessLayer.Repositories
     public class BaseProductRepository<T> : IRepository where T : BaseProduct
     {
         private static ISession session;
-        public BaseProductRepository() 
+        public BaseProductRepository()
         {
             session = new NHibernateHelper().GetCurrentSession();
         }

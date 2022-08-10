@@ -1,7 +1,6 @@
-﻿using EasyShop.DataAccessLayer.Models.Products.Interfaces;
-using FluentNHibernate.Mapping;
+﻿using FluentNHibernate.Mapping;
 
-namespace EasyShop.DataAccessLayer.Models.Products
+namespace EasyShop.DataAccessLayer.Models
 {
     public class SoftToy : BaseProduct, IVolumetricProduct
     {

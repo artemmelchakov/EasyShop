@@ -1,4 +1,4 @@
-﻿namespace EasyShop.DataAccessLayer.Models.Products.Interfaces
+﻿namespace EasyShop.DataAccessLayer.Models
 {
     public interface IFlatProduct
     {
