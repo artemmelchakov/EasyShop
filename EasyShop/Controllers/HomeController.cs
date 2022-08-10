@@ -1,5 +1,4 @@
 ﻿using EasyShop.DataAccessLayer.Models;
-using EasyShop.DataAccessLayer.Models.NHibernate;
 using EasyShop.DataAccessLayer.Repositories;
 using EasyShop.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -43,12 +42,7 @@ namespace EasyShop.Controllers
 
         public IActionResult Index()
         {
-            Picture pictures;
-            using(ISession session = NHibernateHelper.OpenSession())
-            {
-                pictures = session.Get<Picture>(new Guid("bd360021-edb5-4c9b-a7e8-924051f9a3b0"));
-                return View(pictures);
-            }
+            return View();
         }
 
         public IActionResult Privacy()
