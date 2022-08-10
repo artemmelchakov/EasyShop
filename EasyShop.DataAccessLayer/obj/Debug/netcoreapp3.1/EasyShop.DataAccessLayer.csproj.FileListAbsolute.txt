@@ -1,0 +1,9 @@
+D:\Csharp projects\EasyShop\EasyShop.DataAccessLayer\bin\Debug\netcoreapp3.1\EasyShop.DataAccessLayer.deps.json
+D:\Csharp projects\EasyShop\EasyShop.DataAccessLayer\bin\Debug\netcoreapp3.1\EasyShop.DataAccessLayer.dll
+D:\Csharp projects\EasyShop\EasyShop.DataAccessLayer\bin\Debug\netcoreapp3.1\EasyShop.DataAccessLayer.pdb
+D:\Csharp projects\EasyShop\EasyShop.DataAccessLayer\obj\Debug\netcoreapp3.1\EasyShop.DataAccessLayer.AssemblyInfoInputs.cache
+D:\Csharp projects\EasyShop\EasyShop.DataAccessLayer\obj\Debug\netcoreapp3.1\EasyShop.DataAccessLayer.AssemblyInfo.cs
+D:\Csharp projects\EasyShop\EasyShop.DataAccessLayer\obj\Debug\netcoreapp3.1\EasyShop.DataAccessLayer.dll
+D:\Csharp projects\EasyShop\EasyShop.DataAccessLayer\obj\Debug\netcoreapp3.1\EasyShop.DataAccessLayer.pdb
+D:\Csharp projects\EasyShop\EasyShop.DataAccessLayer\obj\Debug\netcoreapp3.1\EasyShop.DataAccessLayer.csprojAssemblyReference.cache
+D:\Csharp projects\EasyShop\EasyShop.DataAccessLayer\obj\Debug\netcoreapp3.1\EasyShop.DataAccessLayer.csproj.CoreCompileInputs.cache
