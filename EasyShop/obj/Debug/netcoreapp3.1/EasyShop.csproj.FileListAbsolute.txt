@@ -136,5 +136,6 @@ D:\Csharp projects\EasyShop\EasyShop\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAn
 D:\Csharp projects\EasyShop\EasyShop\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\Csharp projects\EasyShop\EasyShop\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\Csharp projects\EasyShop\EasyShop\obj\Debug\netcoreapp3.1\EasyShop.csproj.CoreCompileInputs.cache
-D:\Csharp projects\EasyShop\EasyShop\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Login.cshtml.g.cs
 D:\Csharp projects\EasyShop\EasyShop\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Index.cshtml.g.cs
+D:\Csharp projects\EasyShop\EasyShop\obj\Debug\netcoreapp3.1\Razor\Views\Admin\SelectProduct.cshtml.g.cs
+D:\Csharp projects\EasyShop\EasyShop\obj\Debug\netcoreapp3.1\Razor\Views\Admin\FillProductProperties.cshtml.g.cs

@@ -14,30 +14,10 @@ namespace EasyShop.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private BaseProductRepository<Picture> baseProductRepository;
 
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
-            baseProductRepository = new BaseProductRepository<Picture>();
-        }
-
-        public IActionResult AddPicture(Picture picture)
-        {
-            // Id --- must be set by Guid 
-            picture.Description = picture.Description == null ? "do not set" : picture.Description;
-            picture.Name = picture.Name == null ? "do not set" : picture.Name;
-            picture.PaintingGenre = picture.PaintingGenre == null ? "do not set" : picture.PaintingGenre;
-            picture.PaintingName = picture.PaintingName == null ? "do not set" : picture.PaintingName;
-            picture.PaintingTechnique = picture.PaintingTechnique == null ? "do not set" : picture.PaintingTechnique;
-
-            picture.HeightCm = 1f;
-            picture.Price = 1m;
-            picture.WidthCm = 1f;
-
-            baseProductRepository.Create(picture);
-
-            return RedirectToAction("Index");
         }
 
         public IActionResult Index()
