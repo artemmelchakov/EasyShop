@@ -20,7 +20,7 @@ namespace EasyShop.DataAccessLayer.NHibernate
                         MsSqlConfiguration.MsSql2012.ConnectionString(@"Data Source=WIN-9KFDI3K9R34\SQLEXPRESS;Initial Catalog=EasyShop;Integrated Security=True")
                         .ShowSql()
                     )
-                    .Mappings(m => m.FluentMappings.AddFromAssemblyOf<Picture>())
+                    .Mappings(m => m.FluentMappings.AddFromAssemblyOf<BaseProduct>())
                     .ExposeConfiguration(cfg => new SchemaUpdate(cfg).Execute(false, true))
                     .BuildSessionFactory();
                 currentSession = sessionFactory.OpenSession();

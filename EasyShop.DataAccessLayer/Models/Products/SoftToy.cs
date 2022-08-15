@@ -14,11 +14,6 @@ namespace EasyShop.DataAccessLayer.Models
     {
         public SoftToyMap()
         {
-            /*Id(picture => picture.Id).GeneratedBy.Guid();
-            Map(picture => picture.Name);
-            Map(picture => picture.Price);
-            Map(picture => picture.Description);*/
-
             Map(softToy => softToy.HeightCm);
             Map(softToy => softToy.WidthCm);
             Map(softToy => softToy.DepthCm);
