@@ -1,0 +1,37 @@
+﻿@using System.Reflection
+
+<h1>CreateProduct</h1>
+
+@using (Html.BeginForm("CreateProduct", "Admin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    @foreach (PropertyInfo propertyInfo_item in ViewBag.PropertyInfo)
+    {
+        if (propertyInfo_item.PropertyType == typeof(Guid)) continue;
+        <div class="form-horizontal">
+            <div class="form-group">
+                @propertyInfo_item.Name
+                <div class="col-md-10">
+                    @{
+                        string input_type = "";
+                    }
+                    @if (propertyInfo_item.PropertyType == typeof(string)) input_type = "text";
+                    else if 
+                    (
+                        propertyInfo_item.PropertyType == typeof(float) ||
+                        propertyInfo_item.PropertyType == typeof(decimal)
+                    ) input_type = "number";
+                    <input class="form-control text-box single-line" data-val="true" id="@propertyInfo_item.Name" name="@propertyInfo_item.Name" type="@input_type" value="">
+                </div>
+            </div>
+        </div>
+    }
+
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Продолжить" class="btn btn-default" />
+        </div>
+    </div>
+}
+
